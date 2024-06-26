@@ -9,7 +9,7 @@ document.addEventListener('scroll', function() {
   const rect3 = Content3.getBoundingClientRect();
   const rect4 = Content4.getBoundingClientRect();
 
-  if (rect.top <= windowHeight && rect.top <= 0) {
+  if (rect.top <= windowHeight) {
     hiddenContent.classList.add('visible');
     Content2.classList.add('visible');
     Content3.classList.add('visible');
