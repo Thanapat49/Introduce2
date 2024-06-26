@@ -14,7 +14,6 @@ document.addEventListener('scroll', function() {
     Content2.classList.add('visible');
     Content3.classList.add('visible');
     Content4.classList.add('visible');
-  } 
   } else {
     hiddenContent.classList.add('visible');
     Content2.classList.add('visible');
