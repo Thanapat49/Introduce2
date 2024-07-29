@@ -174,5 +174,13 @@ button{
 .space {
     height: 100vh;
 }
+#image12{
+    display: inline;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    max-width: 15%;
+    height: auto;
+    margin: 10px 10px 10px 10px;
+}
 
 
