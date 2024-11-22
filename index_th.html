@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <script src="asserts/script.js"></script>
         <link rel="icon" href="asserts/image/icon.jpg">
         <title>My Profile</title>
         <meta charset="utf-8">
@@ -19,49 +18,54 @@
     </head>
         
     <body>
-        <div class="space">
-            <div>
-                <p class="">สวัสดีครับ ผมชื่อ</p>
-                <p class="title">ธนภัทร กอเจริญวิทย์</p>
-                <p class="">ตอนนี้ผมเป็นนักเรียน ในอนาคตผมใฝ่ฝันอยากประกอบอาชีพผู้พัฒนาเกม</p>  
-            </div>
-            <div id="content1"> 
-                <img id="Profile" src="asserts/image/profile.jpg" alt="Profile" >
-            </div>
-            <div id="content2">
-                <p class="section">งานอดิเรก</p>
-                <img id="image" src="asserts/image/1.png">
-                <img id="image2" src="asserts/image/2.png">
-                <img id="image3" src="asserts/image/3.png">
-            </div>
-            <div id="content3">  
-                <p class="section">วิชาที่ชอบ</p>
-                <img id="image4" src="asserts/image/4.png">
-                <img id="image5" src="asserts/image/5.png">
-            </div>
-            <div id="content4">
-                <p class="section">โครงงาน</p>
-                <a href="https://youtu.be/eEVpN1UTJBU" alt="youtube">
-                    <img id="image6" src="asserts/image/6.png">
-                </a>
-                <a href="https://drive.google.com/file/d/1wxcKf0QBh1urQQj-EKEl8ULWgzqDBlZ1/view?usp=sharing" alt="Project">
-                    <img id="image7" src="asserts/image/7.png">
-                </a>
-                <a href="https://thefkickeringexit.netlify.app/" alt="Project">
-                    <img id="image12" src="asserts/image/Game.png">
-                </a>
-                <p class="section">ช่องทางการติดต่อ</p>
-                <img id="image9" src="asserts/image/9.png">
-                <a href="https://www.facebook.com/tanapat.korcharoenwit" alt="Facebook">
-                    <img id="image8" src="asserts/image/8.png">
-                </a>
-                <a href="https://www.instagram.com/tannme90?igsh=MXQ2aXB3YTU3dXEzcQ%3D%3D&utm_source=qr" alt="ig">
-                    <img id="image10" src="asserts/image/10.png">
-                </a>
-                <a href="https://x.com/korcharoen38135?s=11" alt="X">
-                    <img id="image11" src="asserts/image/11.png">
-                </a>
-            </div>
+        <script src="asserts/script.js"></script>
+        <div>
+            <p class="">สวัสดีครับ ผมชื่อ</p>
+            <p class="title">ธนภัทร กอเจริญวิทย์</p>
+            <p class="">ตอนนี้ผมเป็นนักเรียน ในอนาคตผมใฝ่ฝันอยากประกอบอาชีพผู้พัฒนาเกม</p>  
+        </div>
+        <div id="content1" class="fade-in" onmouseover="visible2()"> 
+            <img id="Profile" src="asserts/image/profile.jpg" alt="Profile">
+        </div>
+        <div id="content2" class="fade-in" onmouseover="visible2()">
+            <p class="section">งานอดิเรก</p>
+            <!-- เปลี่ยน id="image" เป็น class="image" -->
+            <img class="image" src="asserts/image/1.png" alt="Hobby 1">
+            <img class="image" src="asserts/image/2.png" alt="Hobby 2">
+            <img class="image" src="asserts/image/3.png" alt="Hobby 3">
+        </div>
+        <div id="content3" class="fade-in" onmouseover="visible2()">  
+            <p class="section">วิชาที่ชอบ</p>
+            <!-- เปลี่ยน id="image4" เป็น class="image" -->
+            <img class="image" src="asserts/image/4.png" alt="Subject 1">
+            <img class="image" src="asserts/image/5.png" alt="Subject 2">
+        </div>
+        <div id="content4" class="fade-in" onmouseover="visible2()">
+            <p class="section">โครงงาน</p>
+            <!-- เปลี่ยน id="image6" เป็น class="image" -->
+            <a href="https://youtu.be/eEVpN1UTJBU" alt="YouTube">
+                <img class="image" src="asserts/image/6.png" alt="Project 1">
+            </a>
+            <a href="https://drive.google.com/file/d/1wxcKf0QBh1urQQj-EKEl8ULWgzqDBlZ1/view?usp=sharing" alt="Project">
+                <img class="image" src="asserts/image/7.png" alt="Project 2">
+            </a>
+            <a href="https://thefkickeringexit.netlify.app/" alt="Project">
+                <img class="image" src="asserts/image/Game.png" alt="Game">
+            </a>
+        </div>
+        <div id="content5" class="fade-in" onmouseover="visible2()">
+            <p class="section">ช่องทางติดต่อ</p>
+            <!-- เปลี่ยน id="image8" และอื่นๆ เป็น class="contact-image" -->
+            <img class="contact-image" src="asserts/image/9.png" alt="Contact 1">
+            <a href="https://www.facebook.com/tanapat.korcharoenwit" alt="Facebook">
+                <img class="contact-image" src="asserts/image/8.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/tannme90?igsh=MXQ2aXB3YTU3dXEzcQ%3D%3D&utm_source=qr" alt="Instagram">
+                <img class="contact-image" src="asserts/image/10.png" alt="Instagram">
+            </a>
+            <a href="https://x.com/korcharoen38135?s=11" alt="X">
+                <img class="contact-image" src="asserts/image/11.png" alt="Twitter">
+            </a>
         </div>
         
         
