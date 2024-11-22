@@ -1,23 +1,22 @@
-document.addEventListener('scroll', function() {
-  const hiddenContent = document.getElementById('content1');
-  const rect = hiddenContent.getBoundingClientRect();
-  const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-  const Content2 = document.getElementById('content2')
-  const Content3 = document.getElementById('content3')
-  const Content4 = document.getElementById('content4')
-  const rect2 = Content2.getBoundingClientRect();
-  const rect3 = Content3.getBoundingClientRect();
-  const rect4 = Content4.getBoundingClientRect();
+function checkVisibility() {
+  const elements = document.querySelectorAll('.fade-in'); // เลือกองค์ประกอบที่มีคลาส fade-in
+  
+  elements.forEach(element => {
+      const rect = element.getBoundingClientRect(); // ตรวจสอบตำแหน่งขององค์ประกอบ
+      
+      // ตรวจสอบว่าองค์ประกอบอยู่ใน viewport หรือไม่
+      if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+          element.classList.add('visible'); // เพิ่มคลาส visible เมื่อองค์ประกอบอยู่ในหน้าจอ
+      } else if (rect.top < window.innerHeight && rect.bottom >= 0) {
+          element.classList.add('visible'); // ตรวจสอบในกรณีที่องค์ประกอบปรากฏบางส่วน
+      } else {
+          element.classList.remove('visible'); // ลบคลาส visible ถ้าองค์ประกอบอยู่นอกหน้าจอ
+      }
+  });
+}
 
-  if (rect.top <= windowHeight) {
-    hiddenContent.classList.add('visible');
-    Content2.classList.add('visible');
-    Content3.classList.add('visible');
-    Content4.classList.add('visible');
-  } else {
-    hiddenContent.classList.add('visible');
-    Content2.classList.add('visible');
-    Content3.classList.add('visible');
-    Content4.classList.add('visible');
-  }
-});
+// ตรวจสอบเมื่อมีการเลื่อนหน้าเว็บ
+window.addEventListener('scroll', checkVisibility);
+
+// เรียกใช้ checkVisibility ตอนโหลดหน้าเว็บ
+window.addEventListener('load', checkVisibility);
