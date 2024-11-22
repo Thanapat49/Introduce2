@@ -1,127 +1,33 @@
-.title{
-    font-size: 40px;
-    font-weight: 500;
-}
-div {
-    text-align: center;
-    
-    
-}
+/* Global Styles */
 * {
     background-color: rgba(124, 80, 59, 0.918);
-    font-family: Verdana , Tahoma, sans-serif;
-    
+    font-family: Verdana, Tahoma, sans-serif;
 }
-#Profile {
-    align-items: flex-start;
-    border-radius: 20px;
-    box-shadow: 10px 10px 10px;
-    max-width: 30%;
-    height: auto;
+
+body {
+    margin: 0;
+    padding: 0;
 }
+
+div {
+    text-align: center;
+}
+
 p {
     color: white;
 }
+
+/* Title and Section */
+.title {
+    font-size: 40px;
+    font-weight: 500;
+}
+
 .section {
     font-size: 30px;
 }
 
-#image{
-    display: inline;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px black;
-    max-width: 15%;
-    height: auto;
-    margin: 10px 10px 10px 10px;
-}
-#image2{
-    display: inline;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px black;
-    max-width: 15%;
-    height: auto;
-    margin: 10px 10px 10px 10px;
-}
-#image3{
-    display: inline;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px black;
-    max-width: 15%;
-    height: auto;
-    margin: 10px 10px 10px 10px;
-}
-#image4{
-    display: inline;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px black;
-    max-width: 15%;
-    height: auto;
-    margin: 10px 10px 10px 10px;
-}
-#image5{
-    display: inline;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px black;
-    max-width: 15%;
-    height: auto;
-    margin: 10px 10px 10px 10px;
-}
-#image6{
-    display: inline;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px black;
-    max-width: 15%;
-    height: auto;
-    margin: 10px 10px 10px 10px;
-}
-#image7{
-    display: inline;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px black;
-    max-width: 15%;
-    height: auto;
-    margin: 10px 10px 10px 10px;
-}
-#image8{
-    display: inline;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px black;
-    max-width: 10%;
-    height: auto;
-    margin: 10px 10px 10px 10px;
-}
-#image9{
-    display: inline;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px black;
-    max-width: 10%;
-    height: auto;
-    margin: 10px 10px 10px 10px;
-}
-#image10{
-    display: inline;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px black;
-    max-width: 10%;
-    height: auto;
-    margin: 10px 10px 10px 10px;
-}
-#image11{
-    display: inline;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px black;
-    max-width: 10%;
-    height: auto;
-    margin: 10px 10px 10px 10px;
-}
-button{
-    width: 100px;
-    height: 50px;
-    background-color: rgb(250, 205, 138);
-    border: transparent;
-    float: right;
-    
-}
+/* Header */
 .header {
     position: fixed;
     top: 0;
@@ -131,56 +37,60 @@ button{
     background-color: blanchedalmond;
     width: 100%;
 }
-.sur {
+
+.header .sur {
     background-color: transparent;
     color: black;
     margin-right: 45%;
     font-size: medium;
-    padding: 0%;
     font-weight: 1000;
 }
-#content1 {
-    opacity: 0;
-    transition: opacity 1s;
+
+button {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(250, 205, 138);
+    border: none;
+    float: right;
+    cursor: pointer;
 }
 
-#content1.visible {
-    opacity: 1;
-}
-#content2 {
-    opacity: 0;
-    transition: opacity 1s;
-}
-
-#content2.visible {
-    opacity: 1;
-}
-#content3 {
-    opacity: 0;
-    transition: opacity 1s;
+/* Profile Image */
+#Profile {
+    align-items: flex-start;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px;
+    max-width: 30%;
+    height: auto;
 }
 
-#content3.visible {
-    opacity: 1;
-}
-#content4 {
-    opacity: 0;
-    transition: opacity 1s;
-}
-
-#content4.visible {
-    opacity: 1;
-}
-.space {
-    height: 100vh;
-}
-#image12{
-    display: inline;
+/* Images */
+.image {
+    display: inline-block;
     border-radius: 10px;
     box-shadow: 10px 10px 10px black;
-    max-width: 15%;
+    max-width: 10%;
     height: auto;
-    margin: 10px 10px 10px 10px;
+    margin: 10px;
 }
 
+/* Contact Images */
+.contact-image {
+    border-radius: 10px;
+    max-width: 5%;
+}
 
+/* Text */
+p {
+    color: white;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
